@@ -2,7 +2,7 @@
 Task Round ARK 2023
 
 ## Prerequisites
-You need to install the following library : [mazelib](https://github.com/john-science/mazelib)
+You need to install the following library : [mazelib](https://github.com/john-science/mazelib) for generating random mazes
 ```
 pip install mazelib
 ```
