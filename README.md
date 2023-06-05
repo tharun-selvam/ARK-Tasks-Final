@@ -6,5 +6,5 @@ You need to install the following library : [mazelib](https://github.com/john-sc
 ```
 pip install mazelib
 ```
-
+Keep all the files : player.py, utils.py and MapGeneration.py in the same directory
 
