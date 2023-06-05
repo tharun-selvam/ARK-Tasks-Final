@@ -4,7 +4,7 @@ import numpy as np
 
 
 player = Player()
-    #Initializing a Player object with random location on a randomly generated Maze
+    #Initializing a Player object with a random start position on a randomly generated Maze
 
 def strategy():
     #This function is to localize the position of the newly created player with respect to the map
