@@ -35,8 +35,11 @@ mazeImgNP = player.getMap()
 localEnvNP = []
 localEnvNP.append(drawRectangle(mazeImgNP, 0, 0))
 
+
+
 cv2.imshow('MAZE', mazeImgNP)
-cv2.imshow('LOCAL', localEnvNP)
+for i in range(len(localEnvNP)):
+    cv2.imshow('LOCAL ' + str(i), localEnvNP[i])
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
