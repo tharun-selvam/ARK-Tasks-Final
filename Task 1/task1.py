@@ -54,15 +54,21 @@ def filterTraversalXOR(img, template):
 
 filterTraversalXOR(artworkNP, filter2x2)
 
+collage = cv2.imread('collage.png')
+collageNP = np.array(collage[:, :, 0])
 
+template = cv2.imread('template_rick.png')
+templateNP = np.array(template)
+def templateMatching(img, template):
+    res = np.zeros((800, 800))
+    m, n = img.shape
+    for i in range(0, m):
+        for j in range(0, n):
+            print('HI')
 
-
-
-
-
-
-
-
-cv2.imshow('ORIGINAL', artworkNP)
+#the co-ordinates of the matched image is 100, 100 so the pwd is 628
+templateMatching(collageNP, templateNP)
+cv2.imshow('COLLAGE', collageNP)
+cv2.imshow('TEMPLATE', templateNP)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
