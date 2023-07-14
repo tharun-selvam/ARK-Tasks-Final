@@ -18,7 +18,7 @@ def templateMatching(img, template):
     :return: an image of size img with the convoluted result of the template
 
     '''
-    
+
     # multiplying an arbitrarily large number to the result matrix
     resultNP = np.ones(img.shape, dtype='float64')*600000
     img_height, img_width = img.shape
